@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebcamLibrary", "WebcamLibrary\WebcamLibrary.csproj", "{0CC375D3-CF3C-41D3-A378-BF5AC6EF9698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebcamLibrary.Tests", "WebcamLibrary.Tests\WebcamLibrary.Tests.csproj", "{98845C7D-C0A9-47D7-834B-CCA5068B1C41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CC375D3-CF3C-41D3-A378-BF5AC6EF9698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC375D3-CF3C-41D3-A378-BF5AC6EF9698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC375D3-CF3C-41D3-A378-BF5AC6EF9698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC375D3-CF3C-41D3-A378-BF5AC6EF9698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98845C7D-C0A9-47D7-834B-CCA5068B1C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98845C7D-C0A9-47D7-834B-CCA5068B1C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98845C7D-C0A9-47D7-834B-CCA5068B1C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98845C7D-C0A9-47D7-834B-CCA5068B1C41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

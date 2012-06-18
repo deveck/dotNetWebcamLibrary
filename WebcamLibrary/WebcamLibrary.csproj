@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CC375D3-CF3C-41D3-A378-BF5AC6EF9698}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevEck.Devices</RootNamespace>
+    <AssemblyName>WebcamLibrary</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ComBitmap.cs" />
+    <Compile Include="DxShow.Net\amstream.cs" />
+    <Compile Include="DxShow.Net\amvideo.cs" />
+    <Compile Include="DxShow.Net\atscpsipparser.cs" />
+    <Compile Include="DxShow.Net\austream.cs" />
+    <Compile Include="DxShow.Net\AxCore.cs" />
+    <Compile Include="DxShow.Net\AXExtend.cs" />
+    <Compile Include="DxShow.Net\BDAIface.cs" />
+    <Compile Include="DxShow.Net\Bdatif.cs" />
+    <Compile Include="DxShow.Net\BDATypes.cs" />
+    <Compile Include="DxShow.Net\Control.cs" />
+    <Compile Include="DxShow.Net\DES.cs" />
+    <Compile Include="DxShow.Net\DevEnum.cs" />
+    <Compile Include="DxShow.Net\DMODShow.cs" />
+    <Compile Include="DxShow.Net\dsattrib.cs" />
+    <Compile Include="DxShow.Net\DsUtils.cs" />
+    <Compile Include="DxShow.Net\dvbsiparser.cs" />
+    <Compile Include="DxShow.Net\DVDIf.cs" />
+    <Compile Include="DxShow.Net\DynGraph.cs" />
+    <Compile Include="DxShow.Net\encdec.cs" />
+    <Compile Include="DxShow.Net\EvCode.cs" />
+    <Compile Include="DxShow.Net\IL21Dec.cs" />
+    <Compile Include="DxShow.Net\MediaObj.cs" />
+    <Compile Include="DxShow.Net\MediaParam.cs" />
+    <Compile Include="DxShow.Net\Misc.cs" />
+    <Compile Include="DxShow.Net\Mixerocx.cs" />
+    <Compile Include="DxShow.Net\mmstream.cs" />
+    <Compile Include="DxShow.Net\mpconfig.cs" />
+    <Compile Include="DxShow.Net\Mpeg2Data.cs" />
+    <Compile Include="DxShow.Net\mpeg2psiparser.cs" />
+    <Compile Include="DxShow.Net\Mpeg2Structs.cs" />
+    <Compile Include="DxShow.Net\other.cs" />
+    <Compile Include="DxShow.Net\PlayList.cs" />
+    <Compile Include="DxShow.Net\QEdit.cs" />
+    <Compile Include="DxShow.Net\qnetwork.cs" />
+    <Compile Include="DxShow.Net\RegBag.cs" />
+    <Compile Include="DxShow.Net\Sbe.cs" />
+    <Compile Include="DxShow.Net\Tuner.cs" />
+    <Compile Include="DxShow.Net\TvRatings.cs" />
+    <Compile Include="DxShow.Net\Uuids.cs" />
+    <Compile Include="DxShow.Net\Vidcap.cs" />
+    <Compile Include="DxShow.Net\VidPort.cs" />
+    <Compile Include="DxShow.Net\Vmr9.cs" />
+    <Compile Include="DxShow.Net\VmRender.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Video\ImageCapture.cs" />
+    <Compile Include="Video\Device.cs" />
+    <Compile Include="Video\ImageCaptureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video\ImageCaptureControl.Designer.cs">
+      <DependentUpon>ImageCaptureControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Video\ImageCaptureControl.resx">
+      <DependentUpon>ImageCaptureControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
